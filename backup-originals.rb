@@ -84,6 +84,7 @@ photosColl.find(
       id = p["id"]
       title = p["title"].gsub("/", " ")
       url = p["url_o"]
+      title = title[0..63] if title.length > 64
       filename = sprintf("%d-%s.jpg", id, title)
 
       $stderr.printf("photo:%d, title:%s url:%s filename:%s\n", id, title, url, filename)
