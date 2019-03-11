@@ -68,7 +68,7 @@ end
 extras_str = "description, license, date_upload, date_taken, owner_name, icon_server,"+
              "original_format, last_update, geo, tags, machine_tags, o_dims, views,"+
              "media, path_alias, url_sq, url_t, url_s, url_m, url_z, url_l, url_o,"+
-             "url_c, url_q, url_n"
+             "url_c, url_q, url_n, url_k, url_h, url_b"
 
 photosColl = db[:photos]
 GALLERY_ID = ARGV[0]
