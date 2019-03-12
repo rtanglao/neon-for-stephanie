@@ -5,7 +5,7 @@
 ./add-synthetic-galleryid-get-gallery-photo-metadata.rb 72157675752554377 2>neon1-add-galleryid-stderr.out &
 git mv ORIGINALS NEON1_ORIGINALS
 mkdir NEON2_ORIGINALS ; cd !$
-../backup-biggest-by-galleryid.rb
+../backup-biggest-by-galleryid.rb  72157675774023387
 ```
 
 # 10March2019 setup the database and download metadata and download originals
@@ -14,5 +14,7 @@ mkdir NEON2_ORIGINALS ; cd !$
 . ./setupFlickrNeonDB
 ./get-gallery-photo-metadata.rb 72157675752554377 2>stderr.out
 mkdir ORIGINALS ; cd !$
-../backup-originals.rb
+../backup-originals.rb # doesn't get all the files!
+../backup-biggest.rb
+
 ```
